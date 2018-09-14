@@ -176,9 +176,17 @@ body {
 }
 @media (min-width: 551px) and (max-width: 634px) {
   #banner {
-    /*margin: auto;*/
     font-size:34px;
+  }
 
+  .section {
+    flex-direction: column;
+  }
+  .sectionHeader, .sectionDetails {
+    flex: 1;
+  }
+  .sectionDetails {
+    margin: auto;
   }
 
 
@@ -191,6 +199,16 @@ body {
     font-size:31px;
   }
 
+  .section {
+    flex-direction: column;
+  }
+  .sectionHeader, .sectionDetails {
+    flex: 1;
+  }
+  .sectionDetails {
+    margin: auto;
+  }
+
 
 }
 
@@ -201,6 +219,15 @@ body {
     font-size:29px;
   }
 
+  .section {
+    flex-direction: column;
+  }
+  .sectionHeader, .sectionDetails {
+    flex: 1;
+  }
+  .sectionDetails {
+    margin: auto;
+  }
 
   
 }
