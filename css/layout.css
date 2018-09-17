@@ -3,8 +3,11 @@ body {
    overflow-x:hidden;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
 /*box-sizing: border-box;*/
-
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -19,27 +22,19 @@ body {
   justify-content: space-around;
   font-size: 24px;
   height: 100vh;
-
+}
+.backgroundHeader {
+  font-family: "Lucida Sans Unicode"; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 33px;
 }
 .hello {
   margin:0 10px;
-  /*border: 1px solid;*/
-  /*flex: 1;*/
-  /*font-size: 3.15vw;*/
 }
 .intro {
   margin:0 10px; 
-  /*border: 1px solid;*/
-
-  /*flex: 1;*/
-  /*font-size: 38px;*/
 }
-
 
 .button {
   margin: 0 10px;
-  /*border: 1px solid;*/
-
   border-radius: 5px;
   border: none;
   font-size: 18px;
@@ -49,44 +44,46 @@ body {
   color: white;
 }
 
-/* .sectionContainer {
-  display: grid;
-  grid-template: 20% 20% 20% 20% 20% / 100%;
-} */
 .section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /*border: 1px solid;*/
   flex-wrap: wrap;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  padding: 5% 10%;
 }
 
 .sectionHeader {
-  text-align: center;
-  flex: 3;
-  /*border: 1px solid;*/
+  padding-bottom: 10px;
+  text-align: left;
+  flex: 2;
+
 }
-
-
 
 .sectionDetails {
   flex: 5;
   text-align: left;
   line-height: 1.5;
-  padding: none;
-  /*border: 1px solid;*/
+
 }
 
+#background {
+  background-color: #2f3640;
+  height: 100%;
+  align-items: center;
+  color: white;
+
+}
 .background {
-  overflow: hidden;
-  font-size: 115%;
-  display: block;
-  padding: none;
+  font-size: 100%;
+  padding-top: 25px;
 }
 
-#profile-image {
-  align-self: center;
-  padding-bottom: 5%;
-}
+
 .profile-image {
   height: 225px;
   width: 225px;
@@ -95,75 +92,61 @@ body {
 }
 
 .skills {
-  border:1px dotted;
-  display: inline-block;
-  margin-right: 75px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.skills_row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skillsRow {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+#topRow {
+  border-bottom: 1px solid;
+}
+#leftQuadrant {
+  border-right: 1px solid;
+}
+.quad {
+  flex: 1;
+}
+.skillsQuadrant {
+  flex: 1;
+
 }
 .skillList {
+  flex: 1;
+  padding-right: 2.3em;
   list-style-type: none;
-  line-height: 1.75;
 }
 
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
+@media (min-width: 320px)  {
   #banner {
-    font-size: 38px;
+    font-size:28px;
   }
-  .intro {
-    width: 625px;
-  }
-
 }
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 480px)  {
   #banner {
-    font-size:39px;
+    font-size:31px;
   }
 
-  .intro {
 
-    width: 650px;
-  }
-  .intro, .button, .hello {
-    margin: 0 25px;
-  }
-  
 }
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 551px) {
   #banner {
-    font-size:36px;
+    font-size:34px;
   }
-  .intro {
-    width: 600px;
-  }
-  .intro, .button, .hello {
-    margin: 0 25px;
-  }
-  
+
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 635px) and (max-width: 1024px)  {
+@media (min-width: 635px) {
   #banner {
     font-size:35px;
 
@@ -174,60 +157,59 @@ body {
 
 
 }
-@media (min-width: 551px) and (max-width: 634px) {
-  #banner {
-    font-size:34px;
-  }
 
-  .section {
-    flex-direction: column;
+@media (min-width: 768px) {
+  #banner {
+    font-size:36px;
   }
-  .sectionHeader, .sectionDetails {
-    flex: 1;
+  .intro {
+    width: 600px;
+  }
+  .intro, .button, .hello {
+    margin: 0 25px;
+  }
+  .section {
+    flex-direction: row;
+  }
+  .sectionHeader {
+    text-align: right;
+    padding-bottom: 0px;
   }
   .sectionDetails {
-    margin: auto;
+      margin: 0 0 0 50px;
+      padding-top: 0px;
   }
-
-
-}
-
-@media (min-width: 480px) and (max-width: 550px) {
-  #banner {
-    /*margin: auto;*/
-
-    font-size:31px;
+  .skills {
+    justify-content: space-around;
   }
-
-  .section {
-    flex-direction: column;
-  }
-  .sectionHeader, .sectionDetails {
-    flex: 1;
-  }
-  .sectionDetails {
-    margin: auto;
-  }
-
-
-}
-
-
-@media (min-width: 320px) and (max-width: 479px) {
-  #banner {
-    /*margin: auto;*/
-    font-size:29px;
-  }
-
-  .section {
-    flex-direction: column;
-  }
-  .sectionHeader, .sectionDetails {
-    flex: 1;
-  }
-  .sectionDetails {
-    margin: auto;
-  }
-
   
+}
+
+@media (min-width: 1025px) {
+  #banner {
+    font-size:39px;
+  }
+
+  .intro {
+    width: 650px;
+  }
+  .intro, .button, .hello {
+    margin: 0 25px;
+  }
+  .sectionDetails {
+      margin: 0 0 0 100px;
+  }
+  
+}
+
+@media (min-width: 1281px) {
+  #banner {
+    font-size: 39px;
+  }
+  .intro {
+    width: 625px;
+  }
+  .background {
+      padding: 0 0 0 100px;
+  }
 }
