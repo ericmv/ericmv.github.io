@@ -19,6 +19,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   padding: 8%;
+  /*border: 1px solid;*/
   /*-webkit-flex-flow: row wrap;*/
 }
 #banner {
@@ -40,12 +41,14 @@ h1, h2, h3 {
 .button {
   margin: 0 10px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid #778beb;
   font-size: 18px;
   height: 60px;
+  font-weight: bold;
   width: 200px;
-  background-color: #2F4F4F;
-  color: white;
+  background-color: white;
+  /*color: #2F4F4F;*/
+  color: #778beb;
 }
 
 .section {
@@ -62,7 +65,7 @@ h1, h2, h3 {
 }
 
 .sectionHeader {
-
+  /*border:1px solid;*/
   padding-bottom: 10px;
   text-align: left;
   flex: 2;
@@ -70,9 +73,10 @@ h1, h2, h3 {
 }
 
 .sectionDetails {
+  /*border:1px solid;*/
   flex: 5;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.6;
 
 }
 
@@ -81,6 +85,7 @@ h1, h2, h3 {
   height: 100%;
   align-items: center;
   color: white;
+  padding: 5% 10%;
 
 }
 .background {
@@ -88,6 +93,17 @@ h1, h2, h3 {
   padding-top: 25px;
 }
 
+.tag {
+  background-color: #778beb;
+  height: 33%;
+  /*border: 1px solid #778beb;*/
+  padding: 0px 5px;
+  border-radius: 10%;
+  margin-left: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
 
 .profile-image {
   height: 225px;
@@ -131,7 +147,14 @@ h1, h2, h3 {
   list-style-type: none;
 }
 
-
+.project {
+  display: flex; 
+  flex-wrap: wrap;
+  margin-right: 10px; 
+  font-weight: 600; 
+  flex-direction: row;
+  align-items: center;
+}
 @media (min-width: 320px)  {
   #banner {
     font-size:28px;
@@ -148,7 +171,6 @@ h1, h2, h3 {
   #banner {
     font-size:34px;
   }
-
 }
 
 @media (min-width: 635px) {
@@ -175,6 +197,7 @@ h1, h2, h3 {
   }
   .section {
     flex-direction: row;
+    padding: 5% 13% 0 10%;
   }
   .sectionHeader {
     text-align: right;
@@ -204,17 +227,38 @@ h1, h2, h3 {
   .sectionDetails {
       margin: 0 0 0 100px;
   }
+  .profile-image {
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+  }
   
 }
 
 @media (min-width: 1281px) {
+  .intro, .button, .hello {
+    margin: 0 0px;
+  }
+
   #banner {
     font-size: 39px;
   }
-  .intro {
-    width: 625px;
+
+  .profile-image {
+    height: 290px;
+    width: 290px;
+    /* border: 1px solid black; */
   }
-  .background {
-      padding: 0 0 0 100px;
+
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding: 5% 17% 5% 13%;
   }
+/*  .profile-image {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid black; */
+  }*/
 }
