@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
    overflow-x:hidden;
 }
 
@@ -12,7 +12,7 @@ h1, h2, h3 {
 }
 /*box-sizing: border-box;*/
 .container {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   display: -webkit-box;
   display: -moz-box;
@@ -100,11 +100,12 @@ h1, h2, h3 {
   height: 100%;
   align-items: center;
   color: white;
-  padding: 4% 14%;
+  padding: 6%;
+  
 
 }
 .background {
-  font-size: 95%;
+  font-size: 15px;
   padding-top: 25px;
   font-weight: 300;
 }
@@ -131,7 +132,7 @@ h1, h2, h3 {
 
 .skillList {
   flex: 1;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-right: 2.3em;
   list-style-type: none;
 }
@@ -227,7 +228,7 @@ h1, h2, h3 {
 
 #footer {
   font-weight: bold;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 2% 3%;
   display: flex;
@@ -358,6 +359,14 @@ h1, h2, h3 {
     width: 250px;
     /* border: 1px solid black; */
   }
+  
+}
+@media (min-width: 1100px) {
+
+  #background {
+    padding: 4% 14% 4% 14%;
+  }
+
   
 }
 
