@@ -1,6 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dosis', sans-serif;
    overflow-x:hidden;
+   color: #485460;
 }
 
 ul {
@@ -12,7 +13,7 @@ h1, h2, h3 {
 }
 /*box-sizing: border-box;*/
 .container {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 300;
   display: -webkit-box;
   display: -moz-box;
@@ -124,7 +125,7 @@ h1, h2, h3 {
 .skills {
   font-size: 15px;
   /*line-height: 1.3;*/
-  font-weight: 300;
+  font-weight: lighter;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -184,7 +185,7 @@ h1, h2, h3 {
 }
 .projectDetails {
   order: 1;
-  font-size: 13px;
+  font-size: 14px;
   /*margin: 0 5%;*/
   flex: 2;
 }
@@ -214,6 +215,7 @@ h1, h2, h3 {
 .projectImage {
   margin-right: 5%;
   flex: 3;
+  margin-bottom: 10%;
 }
 
 .image {
@@ -228,8 +230,9 @@ h1, h2, h3 {
 
 #footer {
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 16px;
+  color: #1B9CFC;
   padding: 2% 3%;
   display: flex;
   align-items: center;
@@ -312,6 +315,9 @@ h1, h2, h3 {
   }
   .projectDetails {
     order: 0;
+  }
+  .projectImage {
+    margin-bottom: 0;
   }
   .projectDetails.left {
     margin-right: 7%;
