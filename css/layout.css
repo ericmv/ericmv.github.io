@@ -22,8 +22,8 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   padding: 8% 4%;
-
 }
+
 #banner {
   justify-content: space-around;
   font-size: 24px;
@@ -121,6 +121,15 @@ h1, h2, h3 {
   border-radius: 50%;
 }
 
+/*EXPERIENCE*/
+.experience-image {
+  border-radius: 10px;
+  width: 225px;
+  height: 175px;
+  border: 1px solid;
+
+}
+
 /*SKILLS*/
 .skills {
   font-size: 15px;
@@ -177,7 +186,7 @@ h1, h2, h3 {
   margin-right: 5px;
   margin-bottom: 10px;
   color: white;
-  font-size: 12px;
+  /*font-size: 12px;*/
   font-weight: bold;
 }
 .projectHeader {
@@ -213,7 +222,11 @@ h1, h2, h3 {
   opacity: 1;
 }
 .projectImage {
+  /*border: 1px solid;*/
   margin-right: 5%;
+/*  display: flex;
+  flex-direction: column;
+  align-items: center;*/
   flex: 3;
   margin-bottom: 10%;
 }
@@ -394,12 +407,39 @@ h1, h2, h3 {
 }
 
 @media (min-width: 1440px) {
-  .section {
-    padding: 5% 17% 5% 13%;
+
+  
+  .profile-image {
+    height: 325px;
+    width: 325px;
   }
-/*  .profile-image {
-    height: 300px;
-    width: 300px;
-    /* border: 1px solid black; */
-  }*/
+  .section {
+    padding: 5% 15% 5% 17%;
+  }
+  
+
+  .image {
+    width: 500px;
+  }
+
+
+}
+
+@media (min-width: 1800px) {
+  #background {
+    padding: 5% 17% 5% 20%;
+    font-size: 16px;
+  }
+  .background {
+    font-size: 17px;
+  }
+    #projects {
+    padding-left: 50px;
+  }
+  .projectDetails {
+    font-size: 16px;
+  }
+  .tag {
+    font-size: 14px;
+  }
 }
