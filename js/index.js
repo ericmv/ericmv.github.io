@@ -17,6 +17,10 @@ var isInViewport = function (elem) {
     );
 };
 
+function getScreenSize() {
+  alert(window.innerWidth)
+}
+
 function isVisible (ele) {
   const { top, bottom } = ele.getBoundingClientRect();
   const vHeight = (window.innerHeight || document.documentElement.clientHeight);
