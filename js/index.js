@@ -1,6 +1,7 @@
 
 let sections = document.getElementsByClassName("section")
 let projects = document.getElementsByClassName("project")
+let experience = document.getElementsByClassName("experience")
 function inView (el) {
   var sb = section.getBoundingClientRect();
   var eb = el.getBoundingClientRect();
@@ -35,9 +36,12 @@ function updateInView() {
   for (let i = 0; i < sections.length; i++) {
     if (isVisible(sections[i])) sections[i].classList.add('inview')
   }
-for (let i = 0; i < projects.length; i++) {
+  for (let i = 0; i < projects.length; i++) {
     if (isVisible(projects[i])) projects[i].classList.add('inview')
   }
+  // for (let i = 0; i < experience.length; i++) {
+  //   if (isVisible(experience[i])) experience[i].classList.add('inview')
+  // }
 }
 
 
