@@ -14,7 +14,7 @@ h1, h2, h3 {
 /*box-sizing: border-box;*/
 .container {
   font-family: 'Dosis', sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -238,7 +238,13 @@ h1, h2, h3 {
 
 
 /*PROJECT SECTION*/
-
+#project {
+  margin-bottom: 0%;
+  /* padding-bottom: 0; */
+}
+#other-project {
+  padding-top: 0;
+}
 .tag {
   background-color: #778beb;
   height: 33%;
@@ -254,6 +260,7 @@ h1, h2, h3 {
   margin-right: 10px
 }
 .projectDetails {
+  /* display: flex */
   order: 1;
   font-size: 14px;
   /*margin: 0 5%;*/
@@ -276,24 +283,30 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 10%;
-
   align-items: center;
 }
 .project.inview {
   opacity: 1;
 }
 .projectImage {
+  /* display: flex; */
   /*border: 1px solid;*/
   /* margin-right: 5%; */
-/*  display: flex;
-  flex-direction: column;
-  align-items: center;*/
+ display: flex;
+  /* flex-direction: column; */
+  align-self: center;
   flex: 3;
   margin-bottom: 10%;
 }
 
 .image {
   width: 100%;
+}
+
+.additional-project {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 14px;
 }
 
 
@@ -402,20 +415,35 @@ h1, h2, h3 {
   }
 
   .project {
+    /* border: 1px solid; */
     flex-direction: row;
     margin-bottom: 10%;
+    justify-content: center;
   }
   .projectDetails {
     order: 0;
   }
   .projectImage {
+    align-items: center;
+    /* border: 1px dotted; */
+    /* align-self: flex-end; */
     margin-bottom: 0;
   }
-  .projectDetails.left {
+  /* .projectDetails.left {
     margin-right: 7%;
-  }
-  .projectDetails.right {
+  } */
+  /* .projectDetails.right {
     margin-left:; 7%;
+  } */
+  .projectImage.right {
+    padding-left: 7%;
+  }
+  .projectImage.left {
+    padding-right: 7%;
+  }
+
+  .additional-project {
+    width: 650px;
   }
   #background {
     flex-direction: row;
@@ -467,6 +495,7 @@ h1, h2, h3 {
     flex-direction: row;
     padding: 5% 13% 0 10%;
   }
+
   .sectionHeader {
     text-align: right;
     padding-bottom: 0px;
@@ -527,13 +556,19 @@ h1, h2, h3 {
     padding: 5% 17% 5% 20%;
     font-size: 16px;
   }
+  .projectImage.left {
+    padding-right: 0%;
+  }
   .background {
     font-size: 17px;
   }
-    #projects {
+  .projects {
     padding-left: 50px;
   }
   .projectDetails {
+    font-size: 16px;
+  }
+  .additional-project {
     font-size: 16px;
   }
   .tag {
